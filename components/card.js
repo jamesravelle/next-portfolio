@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import NextImage from "./image"
+import { getStrapiMedia } from "../lib/media"
 
 const Card = ({ article }) => {
   const imageUrl = getStrapiMedia(article.attributes.image)
