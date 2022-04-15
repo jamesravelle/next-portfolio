@@ -3,12 +3,14 @@ import Link from "next/link"
 import NextImage from "./image"
 
 const Card = ({ article }) => {
+  const imageUrl = getStrapiMedia(article.attributes.image)
+
   return (
     <Link href={`/article/${article.attributes.slug}`}>
       <a className="uk-link-reset">
         <div className="uk-card uk-card-muted">
           <div className="uk-card-media-top">
-            <NextImage image={article.attributes.image} />
+            <NextImage image={imageUrl} />
           </div>
           <div className="uk-card-body">
             <p id="category" className="uk-text-uppercase">
