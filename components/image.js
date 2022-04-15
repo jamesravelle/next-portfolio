@@ -19,8 +19,6 @@ const Image = ({ image, style }) => {
       src={getStrapiMedia(image)}
       alt={alternativeText || ""}
     />
-    Image: {JSON.stringify(image)}<br/>
-    Rendered: {JSON.stringify(getStrapiMedia(image))}
     </>
   )
 }

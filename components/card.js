@@ -12,7 +12,6 @@ const Card = ({ article }) => {
         <div className="uk-card uk-card-muted">
           <div className="uk-card-media-top">
             <NextImage image={article.attributes.image} />
-            Image URL: {imageUrl}
           </div>
           <div className="uk-card-body">
             <p id="category" className="uk-text-uppercase">
