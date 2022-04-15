@@ -9,6 +9,7 @@ const Image = ({ image, style }) => {
   // }
 
   return (
+    <>
     <NextImage
       // loader={loader}
       layout="responsive"
@@ -18,6 +19,9 @@ const Image = ({ image, style }) => {
       src={getStrapiMedia(image)}
       alt={alternativeText || ""}
     />
+    Image: {image}<br/>
+    Rendered: {getStrapiMedia(image)}
+    </>
   )
 }
 
